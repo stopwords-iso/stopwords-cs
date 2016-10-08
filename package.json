@@ -1,0 +1,26 @@
+{
+  "name": "stopwords-cs",
+  "version": "0.1.0",
+  "author": "Gene Diaz <genediazjr@gmail.com> (http://genediazjr.com)",
+  "description": "The most comprehensive collection of stopwords for the czech language.",
+  "keywords": [
+    "czech",
+    "stopwords",
+    "stop words"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/stopwords-iso/stopwords-cs",
+  "bugs": "https://github.com/stopwords-iso/stopwords-cs/issues",
+  "main": "stopwords-cs.json",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "stopwords-collator -s raw -o stopwords-cs",
+    "test": "npm run build && jsonlint stopwords-cs.json -q"
+  },
+  "devDependencies": {
+    "stopwords-collator": "*",
+    "jsonlint": "1.6.x"
+  }
+}
